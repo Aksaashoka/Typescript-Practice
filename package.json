@@ -13,6 +13,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@capacitor/camera": "^5.0.6"
+    "@capacitor/camera": "^5.0.6",
+    "@ngneat/falso": "^7.1.0"
   }
 }
