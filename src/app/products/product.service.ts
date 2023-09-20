@@ -25,7 +25,7 @@ export const getProductbyID = (id: string) => {
   return response;
 };
 export const updateProduct = (
-  id: string,
+  id: Product['id'],
   changes: UpdateProductDto
 ): Product => {
   const index = products.findIndex((item) => item.id === id);
@@ -42,6 +42,9 @@ export const deleteProduct = () => {};
 export const getAllProducts = () => products;
 
 export const findProducts = (dto: FindProduct): Product[] => {
+  // No me permite mutar ni re asignar el array
+  // dto.tags = []
+  // dto.tags?.push()
   // codigo de motor de busqueda
   return products;
 };
